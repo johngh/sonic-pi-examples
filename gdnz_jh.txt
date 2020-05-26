@@ -1,0 +1,145 @@
+#
+# God Defend New Zealand
+# Converted from https://github.com/johngh/conplay/blob/master/gdnz_jh.notes
+#
+
+dec_level = 0.4
+
+define :sq do |note_name|
+  play note_name, decay: dec_level
+  sleep 0.125
+end
+define :qu do |note_name|
+  play note_name, decay: dec_level
+  sleep 0.25
+end
+define :qd do |note_name|
+  play note_name, decay: dec_level
+  sleep 0.375
+end
+define :cr do |note_name|
+  play note_name, decay: dec_level
+  sleep 0.5
+end
+define :cd do |note_name|
+  play note_name, decay: dec_level
+  sleep 0.75
+end
+define :mi do |note_name|
+  play note_name, decay: dec_level
+  sleep 1.0
+end
+define :md do |note_name|
+  play note_name, decay: dec_level
+  sleep 1.5
+end
+
+with_fx :reverb,room: 0.4 do
+  
+  use_bpm 60
+  use_synth :piano
+    
+  puts "God of nations"
+  cr :G4
+  cr :fs4
+  cr :G4
+  cr :D4
+
+  puts "at thy feet"
+  cr :B4
+  qd :B4
+  sq :A4
+  cd :G4
+  qu :rest
+
+  puts "In the bonds of"
+  cr :E4
+  cr :C5
+  cr :D4
+  cr :B4
+
+  puts "Love we meet"
+  qu :A4
+  qu :G4
+  qu :fs4
+  qu :E4
+  cd :D4
+  qu :rest
+
+  puts "Hear our voices"
+  cr :G4
+  cr :D4
+  cr :E4
+  cr :fs4
+
+  puts "we entreat"
+  cr :G4
+  cr :A4
+  cd :D5
+  cr :rest
+
+  puts "God defend our"
+  cr :D5
+  cr :C5
+  cr :B4
+  cr :C5
+
+  puts "Free Land."
+  cr :B4
+  cr :A4
+  cd :G4
+  cr :rest
+
+  puts "Guard Pacific's"
+  cr :D5
+  cr :D5
+  cr :G4
+  cr :B4
+
+  puts "triple star"
+  cr :D5
+  qu :D5
+  qu :E5
+  cd :D5
+  cr :rest
+
+  puts "From the shafts of"
+  cr :A4
+  cr :B4
+  qu :C5
+  qu :B4
+  qu :A4
+  qu :G4
+
+  puts "strife and war,"
+  qu :fs4
+  qu :G4
+  qu :fs4
+  qu :E4
+  cd :D4
+  cr :rest
+
+  puts "Make her praises"
+  cr :G4
+  cr :D4
+  cr :E4
+  cr :fs4
+
+  puts "heard afar,"
+  cr :G4
+  cr :A4
+  mi :D5
+
+  puts "God defend New"
+  cr :D5
+  cr :C5
+  cr :B4
+  cr :C5
+
+  puts "Zealand."
+  cr :B4
+  cr :A4
+  mi :G4
+
+end
+
