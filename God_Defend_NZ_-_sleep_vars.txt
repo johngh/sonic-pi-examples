@@ -1,0 +1,185 @@
+# God Defend New Zealand
+# Converted from https://github.com/johngh/conplay/blob/master/gdnz.notes
+
+use_bpm 60
+use_synth :piano
+
+sq = 0.125
+qu = 0.25
+qd = 0.375
+cr = 0.5
+cd = 0.75
+mi = 1.0
+md = 1.5
+
+puts "God of nations"
+play :G4
+sleep cr
+play :fs4
+sleep cr
+play :G4
+sleep cr
+play :D4
+sleep cr
+
+puts "at thy feet"
+play :B4
+sleep cr
+play :B4
+sleep qd
+play :A4
+sleep sq
+play :G4
+sleep cd
+play :rest
+sleep qu
+
+puts "In the bonds of"
+play :E4
+sleep cr
+play :C5
+sleep cr
+play :D4
+sleep cr
+play :B4
+sleep cr
+
+puts "Love we meet"
+play :A4
+sleep qu
+play :G4
+sleep qu
+play :fs4
+sleep qu
+play :E4
+sleep qu
+play :D4
+sleep cd
+play :rest
+sleep qu
+
+puts "Hear our voices"
+play :G4
+sleep cr
+play :D4
+sleep cr
+play :E4
+sleep cr
+play :fs4
+sleep cr
+
+puts "we entreat"
+play :G4
+sleep cr
+play :A4
+sleep cr
+play :B4
+sleep cd
+play :rest
+sleep qu
+
+puts "God defend our"
+play :B4
+sleep cr
+play :G4
+sleep cr
+play :E4
+sleep cr
+play :A4
+sleep cr
+
+puts "Free Land."
+play :G4
+sleep cr
+play :fs4
+sleep cr
+play :G4
+sleep cd
+play :rest
+sleep qd
+
+puts "Guard Pacific's"
+play :D5
+sleep cr
+play :D5
+sleep cr
+play :G4
+sleep cr
+play :B4
+sleep cr
+
+puts "triple star"
+play :D5
+sleep cr
+play :D5
+sleep qu
+play :E5
+sleep qu
+play :D5
+sleep cd
+play :rest
+sleep qd
+
+puts "From the shafts of"
+play :A4
+sleep cr
+play :B4
+sleep cr
+play :C5
+sleep qu
+play :B4
+sleep qu
+play :A4
+sleep qu
+play :G4
+sleep qu
+
+puts "strife and war,"
+play :fs4
+sleep qu
+play :G4
+sleep qu
+play :fs4
+sleep qu
+play :E4
+sleep qu
+play :D4
+sleep cd
+play :rest
+sleep qd
+
+puts "Make her praises"
+play :G4
+sleep cr
+play :D4
+sleep cr
+play :E4
+sleep cr
+play :fs4
+sleep cr
+
+puts "heard afar,"
+play :G4
+sleep cr
+play :A4
+sleep cr
+play :D5
+sleep mi
+
+puts "God defend New"
+play :D5
+sleep cr
+play :C5
+sleep cr
+play :B4
+sleep cr
+play :C5
+sleep cr
+
+puts "Zealand."
+play :B4
+sleep cr
+play :A4
+sleep cr
+play :G4
+sleep mi
