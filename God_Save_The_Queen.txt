@@ -1,0 +1,101 @@
+# God Save The Queen
+# Converted from https://github.com/johngh/conplay/blob/master/gstq.notes
+
+dec_level = 0.4
+
+define :sq do |note_name|
+  play note_name, decay: dec_level
+  sleep 0.125
+end
+define :qu do |note_name|
+  play note_name, decay: dec_level
+  sleep 0.25
+end
+define :qd do |note_name|
+  play note_name, decay: dec_level
+  sleep 0.375
+end
+define :cr do |note_name|
+  play note_name, decay: dec_level
+  sleep 0.5
+end
+define :cd do |note_name|
+  play note_name, decay: dec_level
+  sleep 0.75
+end
+define :mi do |note_name|
+  play note_name, decay: dec_level
+  sleep 1.0
+end
+define :md do |note_name|
+  play note_name, decay: dec_level
+  sleep 1.5
+end
+
+with_fx :reverb,room: 0.4 do
+  
+  use_bpm 60
+  use_synth :piano
+  
+  # 
+  cr :G4
+  cr :G4
+  cr :A4
+
+  cd :fs4
+  qu :G4
+  cr :A4
+
+  cr :B4
+  cr :B4
+  cr :C5
+
+  cd :B4
+  qu :A4
+  cd :G4
+
+  cr :A4
+  cr :G4
+  cr :fs4
+
+  cd :G4
+  qu :G4
+  qu :A4
+  qu :B4
+  qu :C5
+
+  cr :D5
+  cr :D5
+  cr :D5
+
+  cd :D5
+  qu :C5
+  cr :B4
+
+  cr :C5
+  cr :C5
+  cr :C5
+
+  cd :C5
+  qu :B4
+  cr :A4
+
+  cr :B4
+  qu :C5
+  qu :B4
+  qu :A4
+  qu :G4
+
+  cd :B4
+  qu :C5
+  cr :D5
+
+  qu :E5
+  qu :C5
+  cr :B4
+  cr :A4
+
+  md :G4
+
+end
+
