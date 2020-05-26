@@ -1,0 +1,111 @@
+#
+# Nad Tatrou Sa Blýska
+#
+dec_level = 0.4
+
+define :sq do |note_name|
+  play note_name, decay: dec_level
+  sleep 0.125
+end
+define :qu do |note_name|
+  play note_name, decay: dec_level
+  sleep 0.25
+end
+define :qd do |note_name|
+  play note_name, decay: dec_level
+  sleep 0.375
+end
+define :cr do |note_name|
+  play note_name, decay: dec_level
+  sleep 0.5
+end
+define :cd do |note_name|
+  play note_name, decay: dec_level
+  sleep 0.75
+end
+define :mi do |note_name|
+  play note_name, decay: dec_level
+  sleep 1.0
+end
+define :md do |note_name|
+  play note_name, decay: dec_level
+  sleep 1.5
+end
+
+with_fx :reverb,room: 0.4 do
+
+  use_bpm 60
+  use_synth :piano
+
+  # Nad Ta-trou
+  qu :G4
+  qu :A4
+  cr :as4
+
+  # sa bly-ska
+  cr :as4
+  qu :as4
+  qu :as4
+
+  # hro-my di-vo
+  qu :A4
+  qu :as4
+  qu :C5
+  qu :as4
+
+  # bi-ju
+  cr :A4
+  cr :G4
+
+  # Nad Ta-trou
+  qu :as4
+  qu :C5
+  cr :D5
+
+  # sa bly-ska
+  cr :D5
+  qu :D5
+  qu :D5
+
+  # hro-my di-vo
+  qu :C5
+  qu :D5
+  qu :ds5
+  qu :D5
+
+  # bi-ju
+  cr :C5
+  cr :as4
+
+  # Zas-tav-me
+  qu :D5
+  qu :D5
+  cr :D5
+
+  # ich, bra-tia
+  cr :C5
+  qu :C5
+  qu :C5
+
+  # ved'sa o-
+  qu :C5
+  qu :D5
+  cr :C5
+
+  # ny stra-tia,
+  cr :as4
+  qu :as4
+  qu :as4
+
+  # Slo-va-ci o-
+  qu :A4
+  qu :as4
+  qu :C5
+  qu :as4
+
+  # ui- ju.
+  cr :A4
+  cr :G4
+
+end
+
